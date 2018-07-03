@@ -1,3 +1,3 @@
 FROM node
 VOLUME ["./:/src/"]
-RUN "npm start"
+RUN "cd /src && npm start"
