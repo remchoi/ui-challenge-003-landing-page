@@ -1,7 +1,11 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const config = require('./config');
 
 module.exports = {
+  devServer: {
+    port: config.webpackPort
+  },
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, '/dist'),
